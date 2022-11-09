@@ -1,5 +1,5 @@
 {% set name = "jive" %}
-{% set version = "7.36" %}
+{% set version = "7.37" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://gitlab.com/tango-controls/jive/-/archive/{{ version }}/jive-{{ version }}.tar.gz
-  sha256: 441f4270d4b85833fcd1dd6325d9045de9f413e8b2c5b385eeec367516e9a1ac
+  sha256: bf2d3098a039115251027cced4d7c6e2f6da5d81d0a455cf45a83a403be4efe6
 
 build:
   number: 0
@@ -33,7 +33,7 @@ about:
   license_file:
     - LICENSE
     - aggregate-third-party-report.html
-  summary: 'Jive is a standalone JAVA application designed to browse and edit the static TANGO database.'
+  summary: Jive is a standalone JAVA application designed to browse and edit the static TANGO database.
   dev_url: https://gitlab.com/tango-controls/jive
   doc_url: https://tango-controls.readthedocs.io/en/latest/tools-and-extensions/built-in/jive/index.html
 

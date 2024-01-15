@@ -23,7 +23,6 @@ fi
 export CLASSPATH=${PREFIX}/share/java/Jive.jar
 
 java \
-    -mx1g \
     -DTANGO_HOST=\$TANGO_HOST \
     jive3.MainPanel \$@
 EOF

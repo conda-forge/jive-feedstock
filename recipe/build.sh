@@ -21,9 +21,11 @@ if [ ! \$TANGO_HOST ] && [ -f /etc/tangorc ]; then
 fi
 
 export CLASSPATH=${PREFIX}/share/java/Jive.jar
+LOGBACK=\${TANGO_LOGBACK:-${PREFIX}/share/tango/logback.xml}
 
 java \
     -DTANGO_HOST=\$TANGO_HOST \
+    -Dlogback.configurationFile="\$LOGBACK" \
     jive3.MainPanel \$@
 EOF
 chmod a+x $PREFIX/bin/jive

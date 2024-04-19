@@ -10,7 +10,7 @@ source:
   sha256: c25907e0887ba3ca96084d049ae797e184a638d2c57a6bda43e093782e4f8603
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -18,6 +18,7 @@ requirements:
     - maven
   run:
     - openjdk >=17
+    - jtango-logback
 
 test:
   commands:

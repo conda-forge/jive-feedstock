@@ -7,7 +7,7 @@ call mvn install -DskipTests
 
 REM Generate third party license report
 call mvn license:aggregate-third-party-report
-copy target\site\aggregate-third-party-report.html .
+copy target\reports\aggregate-third-party-report.html .
 
 mkdir "%PREFIX%\share\java"
 copy target\Jive-%PKG_VERSION%-jar-with-dependencies.jar %PREFIX%\share\java\Jive.jar

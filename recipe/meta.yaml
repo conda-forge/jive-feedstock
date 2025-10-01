@@ -1,5 +1,5 @@
 {% set name = "jive" %}
-{% set version = "7.45" %}
+{% set version = "7.46" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://gitlab.com/tango-controls/jive/-/archive/{{ version }}/jive-{{ version }}.tar.gz
-  sha256: 80d59e21b699dc64932104f3c593840eb41c85722106e2b76f0721629bd46eaa
+  sha256: db48a7ceb80615e41c7cdc93d0b96d12fcbca22504315b3473cb2524dbadb5c6
 
 build:
   number: 0

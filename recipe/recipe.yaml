@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: jive
-  version: 8.0
+  version: "8.0"
 
 package:
   name: ${{ name|lower }}

@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: jive
-  version: "8.0"
+  version: "8.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://gitlab.com/tango-controls/jive/-/archive/${{ version }}/jive-${{ version }}.tar.gz
-  sha256: 9c1e8e594caf7c165c94f14acae412dd1e55284f2581c6b046a69a7d27d1138b
+  sha256: b690b6d1a526fdc2a78595a6a383e74bbc45ab27a47a449ebf5b529211fcf252
 
 build:
   number: 0
